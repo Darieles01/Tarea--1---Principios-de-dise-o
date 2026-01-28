@@ -34,13 +34,4 @@ public class UserDataManagerFixed {
             System.out.println("Invalid username or password.");
         }
     }
-
-    public static void main(String[] args) {
-        UsernameValidator usernameValidator = new UsernameValidator();
-        PasswordValidator passwordValidator = new PasswordValidator();
-
-        UserDataManagerFixed userManager = new UserDataManagerFixed("john_doe", "Password123", usernameValidator, passwordValidator);
-        userManager.registerUser();
-        userManager.loginUser();
-    }
 }
